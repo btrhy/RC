@@ -1,16 +1,22 @@
-html, body {
-    max-width: 90%;
-    overflow-x: hidden;
+* {
+    outline: solid 1px red;
+}
+
+body {
+    max-width: 100%;
     background-color: rgb(230, 230, 230);
+}
+html {
+    /*max-width: 100%;*/
 }
 h1,h2,h3 {
     font-family: 'Lato', sans-serif;
     font-weight:400;
     color: #444;
-	text-align: center;
+	/*text-align: center;*/
 	position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     font-size: 2.5em;
     margin-top:0.2em;
     margin-bottom:0.2em;
@@ -30,19 +36,27 @@ a{
 }
 
 .center {
-    size:inherit;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
     position: absolute;
-    margin: auto;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .center img {
     width: 10em;
     height: 10em;
     padding-bottom: 3em;
+}
+
+.iconRow{
+    flex-direction: row;
 }
 
 .icons{
