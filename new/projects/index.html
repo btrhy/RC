@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-AU" data-theme="field">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the Rhyder Constructions project portfolio.">
+  <title>Projects | Rhyder Constructions</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <script src="../assets/themes.js"></script>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/projects-data.js"></script>
+  <script defer src="../assets/projects.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo.svg" alt="" width="46" height="53">
+        <span>Rhyder <span>Constructions</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html" aria-current="page">Projects</a>
+        <a href="../contact/index.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell page-main">
+    <header class="page-intro">
+      <h1>Projects<span>.</span></h1>
+      <p>These sample projects use fictional descriptions and illustrative imagery.</p>
+      <a class="text-link latest-work" href="https://www.instagram.com/rhyderconstructions/">See our latest work on Instagram</a>
+    </header>
+    <div class="project-list" id="project-list"></div>
+    <noscript><p>Enable JavaScript to view the project galleries.</p></noscript>
+    <template id="project-template">
+      <article class="project">
+        <div class="project-copy">
+          <p class="project-subtitle"></p>
+          <h2></h2>
+          <p class="project-description"></p>
+        </div>
+        <ul class="project-gallery"></ul>
+      </article>
+    </template>
+    <section class="contact-band" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Planning a project?</h2>
+      <a class="button" href="../contact/index.html">Get in touch</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© Rhyder Constructions</span>
+      <a href="https://www.instagram.com/rhyderconstructions/">Instagram<span class="visually-hidden"> · Rhyder Constructions</span></a>
+    </div>
+  </footer>
+  <dialog class="photo-viewer" id="photo-viewer" aria-labelledby="photo-viewer-title">
+    <div class="photo-viewer-header">
+      <h2 id="photo-viewer-title"></h2>
+      <form method="dialog">
+        <button type="submit" aria-label="Close photo viewer" autofocus>×</button>
+      </form>
+    </div>
+    <div class="photo-viewer-stage">
+      <img alt="" draggable="false">
+    </div>
+    <div class="photo-viewer-controls">
+      <button type="button" class="photo-previous" aria-label="Previous photo">←</button>
+      <p class="photo-position" aria-live="polite" aria-atomic="true"></p>
+      <button type="button" class="photo-next" aria-label="Next photo">→</button>
+    </div>
+  </dialog>
+</body>
+</html>
